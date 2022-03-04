@@ -1,0 +1,145 @@
+
+*{
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+}
+
+
+/* For mobile (Defaul) */
+
+/*CSS Style of menu  */ 
+#clear{
+  clear:both;
+}
+
+.menu {
+  padding: 0 30px;
+  overflow: auto;
+  background-color: #556270;
+}
+
+ul.menu li{
+  list-style-type: none;
+  padding: 10px;
+}
+
+ul.menu li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color:white;
+}
+
+ul.menu .menu-left {
+  float: left;
+}
+
+ul.menu .menu-right {
+  float: right;
+}
+
+
+/* CSS style of banner */
+
+div.banner-text {
+  padding-left: 60px;
+}
+
+.banner-text p {
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+#horizontal-line{
+  display: none;
+}
+
+
+/* CSS style of section */
+section.content {
+  overflow: auto;
+  padding: 20px 40px;
+}
+
+section.content img{
+  width: 95%;
+  height: 100%;
+}
+
+section.content div{
+     padding-bottom: 25px;
+     padding-left: 20px;
+}
+
+section.content  div:nth-of-type(1) > img:first-child{
+    padding-bottom: 25px;
+  }
+
+section.content  div:nth-of-type(2) > img:first-child{
+  padding-bottom: 25px;
+}
+
+
+/* CSS style of footer  */
+footer.footer{
+  overflow: auto;
+  padding: 0px 40px;
+}
+
+.footer div{
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+
+/* For tablets */
+@media only screen and (min-width: 768px)and (max-width:991px) {
+
+  ul.menu {
+    background-color: #556270;
+  }
+
+  section.content div:nth-of-type(3)>img {
+      padding-top: 20px;
+  }
+
+  #horizontal-line{
+      display: block;
+    }
+}
+
+
+
+/*  For destop */
+@media only screen  and (min-width:992px) {
+      
+ul.menu {
+  background-color:white
+}
+
+ul.menu li a {
+  color:black;
+}
+
+#banner {
+background: url(./images/banner.png) no-repeat;
+width: 100%;
+height: 500px;
+position: relative;
+background-size:cover;
+}
+
+.banner-text {
+position: absolute;
+top: 150px;
+color: white;
+}
+} 
+
+
+ 
+
+
+
+
+
